@@ -9,7 +9,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        accent: "var(--accent)",
+        accent: {
+          DEFAULT: "var(--accent)",
+          light: "var(--accent-light)",
+        },
       },
     },
   },
