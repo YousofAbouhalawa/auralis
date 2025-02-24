@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 
+:root {
+  --accent: #FFDB38;
+}
+
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Inter, Helvetica, sans-serif;
 }

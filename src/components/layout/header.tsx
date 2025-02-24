@@ -8,21 +8,22 @@ import IconShoppingBag from "../icons/shopping-bag";
 const Header: FC = () => {
 
     return (
-        <header className="flex items-center w-full max-w-[1200px] m-auto justify-between p-4">
+        <div className="absolute w-screen z-[1000] ">
+        <header className="flex items-center  max-w-[1200px]  m-auto justify-between p-8">
             <Link href={"/"}>
                 <Logo size={120} />
             </Link>
             <nav>
-                <ul className="flex items-center justify-center space-x-4">
+                <ul className="flex items-center justify-center space-x-8">
                     <li>
-                        <Link href={"/"} className="italic text-xl">Shop</Link>
+                        <Link href={"/"} className="italic text-2xl">Shop</Link>
                     </li>
                     <li>
                         <ShoppingBagButton />
                     </li>
                 </ul>
             </nav>
-        </header>
+        </header></div>
     );
 }
 
